@@ -1,0 +1,6 @@
+.custom-img {
+  height: 600px;
+  object-fit: cover;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
