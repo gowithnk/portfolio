@@ -1,0 +1,20 @@
+.navbar__logo {
+  height: 30px;
+  margin-right: 10px;
+}
+.ml-auto .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+}
+.animate__navbar {
+  box-shadow: 0px 1px 15px rgb(115 106 106);
+  animation: moveDown 0.1s ease-in-out;
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
