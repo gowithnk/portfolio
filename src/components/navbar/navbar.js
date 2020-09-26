@@ -9,7 +9,6 @@ function MyNavbar() {
     <div>
       <Navbar
         fixed="top"
-        containe
         collapseOnSelect
         expand="md"
         bg="dark"

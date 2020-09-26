@@ -8,38 +8,35 @@ import "./carousel.css";
 
 function carousel() {
   return (
-    <div>
-      <div id="home">
-        <Carousel
-          controls={false}
-          indicators
-          interval={2500}
-          pauseOnHover={false}
-        >
-          <Carousel.Item>
-            <img
-              className="d-block w-100 custom-img"
-              src={Slide2}
-              alt="First slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 custom-img"
-              src={Slide3}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 custom-img"
-              src={Slide1}
-              alt="Third slide"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <ScrollDown />
-      </div>
+    <div id="home">
+      <Carousel
+        controls={false}
+        indicators
+        interval={2500}
+      >
+        <Carousel.Item>
+          <img
+            className="d-block w-100 custom-img"
+            src={Slide2}
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 custom-img"
+            src={Slide3}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 custom-img"
+            src={Slide1}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+      </Carousel>
+      <ScrollDown />
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.turn {
+  position: relative;
+  z-index: 1;
+  color: #66fcf1;
+  bottom: 3em;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  text-shadow: 1px 1px #45a29e;
+  cursor: pointer;
+  transform: rotate(90deg);
+}

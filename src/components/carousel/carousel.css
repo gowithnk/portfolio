@@ -1,3 +1,6 @@
+#home {
+  height: 600px;
+}
 .custom-img {
   height: 600px;
   object-fit: cover;
