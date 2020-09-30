@@ -6,40 +6,83 @@ import Image from "react-bootstrap/Image";
 import Profile from "../assets/img/profile.jpg";
 import "./about.css";
 import Button from "react-bootstrap/Button";
-import Devider from "../components/Devider/devider";
 
 function About() {
   return (
     <div id="about">
-      <Devider />
       <div>
-        <h1 className="about__heading text-center">About</h1>
+        <h1 className="about__heading text-center  font-details pb-3 pt-3">
+          ABOUT ME
+        </h1>
         <Container className="about__Container">
-          <Row>
+          <Row className="pt-3 pb-5 align-items-center">
             <Col className="about__profile" xs={12} md={6}>
-              <Image src={Profile} thumbnail />
+              <Row className="justify-content-center mb-2">
+                <Image
+                  className="profile__pic justify-content-end"
+                  src={Profile}
+                  thumbnail
+                  fluid
+                />
+              </Row>
             </Col>
-            <Col className="about__description" xs={12} md={6}>
-              <h2>Hi, I am Niranja kumar</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Architecto necessitatibus error unde aut enim quae laboriosam
-                perferendis excepturi provident! Voluptas commodi optio minima
-                reprehenderit incidunt architecto inventore minus, delectus
-                distinctio sint ad voluptatibus cupiditate rerum facilis facere
-                aliquam laboriosam iusto soluta sunt, possimus eveniet? Modi
-                debitis aliquam corrupti, laboriosam quidem, quaerat temporibus
-                similique ex rerum molestias suscipit, sit voluptatem eveniet
-                possimus saepe omnis? Odio consequuntur officiis repellendus at
-                aut! Ratione facere neque a vel unde suscipit possimus. Modi,
-                similique aliquam!
-              </p>
-              <Row>
-                <Col>
-                  <Button variant="outline-primary">Primary</Button>{" "}
-                  <Button variant="outline-secondary">Secondary</Button>{" "}
-                  <Button variant="outline-success">Success</Button>{" "}
-                  <Button variant="outline-warning">Warning</Button>{" "}
+            <Col className="mb-2" xs={12} md={6}>
+              <Row className=" align-items-start p-2 my-details rounded">
+                <h2>Hi, I am Niranjan kumar</h2>
+                <p>
+                  A passionate programmer and a Tutor, born and brought up in
+                  India. I am a Full Stack Web Developer with React.js, Redux,
+                  Express.js, Node.js, and PostgreSQL as my tech stack.
+                  <br />
+                  Working with the clients, my goal is always driven towards
+                  providing amazing experience with the best level of quality
+                  and service to them.
+                </p>
+                <Col className="d-flex justify-content-center flex-wrap">
+                  <div>
+                    <a
+                      href="https://drive.google.com/file/d/1t2NH7FXiRSFXz1HS7pNuVHIyDXVsmpUG/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="m-2" variant="outline-primary">
+                        Resume
+                      </Button>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.facebook.com/niranjan.int"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="m-2" variant="outline-success">
+                        Facebook
+                      </Button>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.github.com/gowithnk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="m-2" variant="outline-dark">
+                        GitHub
+                      </Button>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.linkedin.com/in/niranjan-chourasia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="m-2" variant="outline-info">
+                        LinkedIn
+                      </Button>
+                    </a>
+                  </div>
                 </Col>
               </Row>
             </Col>

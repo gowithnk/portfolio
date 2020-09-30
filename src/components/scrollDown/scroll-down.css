@@ -1,4 +1,4 @@
-.turn {
+.scrolldown__turn {
   position: relative;
   z-index: 1;
   color: #66fcf1;
@@ -8,6 +8,5 @@
   justify-content: center;
   background-color: transparent;
   text-shadow: 1px 1px #45a29e;
-  cursor: pointer;
   transform: rotate(90deg);
 }
